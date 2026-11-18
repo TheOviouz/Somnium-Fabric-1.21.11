@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "somnium",
+	"version": "${version}",
+	"name": "Somnium",
+	"description": "A real paradise, as long as you don't dig to deep...",
+	"authors": [
+		"ItsOviouz_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/TheOviouz/Somnium-Fabric-1.21.11"
+	},
+	"license": "MIT",
+	"icon": "assets/somnium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.oviouz.somnium.Somnium"
+		],
+		"fabric-datagen": [
+			"net.oviouz.somnium.SomniumDataGenerator"
+		],
+		"client": [
+			"net.oviouz.somnium.SomniumClient"
+		]
+	},
+	"mixins": [
+		"somnium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
